@@ -136,19 +136,17 @@ def ResetShape():
 global shape
 shape = Shape([0,0,0,0])
 while True:
+    ResetShape()
     print ("Main Menu")
-    print ("Enter 'A' for Area, 'P' for Perimeter or 'V' for shape.sides[3].")
+    print ("Enter 'A' for Area, 'P' for Perimeter or 'V' for Volume.")
     print ("Enter 'Q' to quit")
     x = input("User=> ").upper()
 
     if (x=='A'):
-        ResetShape()
         AreaMath()
     elif (x=='P'):
-        ResetShape()
         PerimeterMath()
     elif (x=='V'):
-        ResetShape()
         VolumeMath()
     elif (x=='Q'):
         break
